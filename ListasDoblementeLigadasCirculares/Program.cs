@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //GERARDO GENOVES
         {
             Lista lista = new Lista(); // Se crea la lista
 

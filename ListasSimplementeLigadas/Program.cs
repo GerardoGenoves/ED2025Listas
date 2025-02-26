@@ -2,7 +2,7 @@
 
 namespace ListasSimplementeLigadas
 {
-    internal class Program
+    internal class Program //GERARDO GENOVES
     {
         static void Main(string[] args)
         {
