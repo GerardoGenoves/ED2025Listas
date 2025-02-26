@@ -4,16 +4,16 @@ namespace ListasSimplementeLigadas
 {
     internal class Lista
     {
-        private Nodo _nodoInicial;
+        private Nodo _nodoInicial; //se declara el nodo por defecto con valor empy y apuntando a null
 
         public Lista() 
         {
             _nodoInicial = new Nodo();
         }
 
-        public void Agregar(string dato)
+        public void Agregar(string dato) //Este metodo es para agregar nodos 
         {
-            Nodo nodoActual = _nodoInicial;
+            Nodo nodoActual = _nodoInicial; 
 
             while (nodoActual.Siguiente != null)
             {
@@ -26,23 +26,12 @@ namespace ListasSimplementeLigadas
             nodoActual.Siguiente = nodoNuevo;
         }
 
-        public bool EstaVacio() 
+        public bool EstaVacio()  //este metodo pregunta si el nodo inicial.siguiente es igual a null
         {
-            //if (_nodoInicial.Siguiente == null)
-            //{
-            //    return true;
-            //}
-
-            //aqui se esta regresando el resultado de la operacion
+           
             return (_nodoInicial.Siguiente == null); 
         }
-
-        public void Vaciar()
-        {
-            _nodoInicial.Siguiente = null;
-        }
-
-        public Nodo? Buscar(string dato) 
+        public Nodo? Buscar(string dato) //metodo para bus 
         {
             if (!EstaVacio())
             {
