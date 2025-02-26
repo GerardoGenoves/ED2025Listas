@@ -4,7 +4,7 @@ namespace ListasSimplementeLigadas
 {
     internal class Lista
     {
-        private Nodo _nodoInicial; //se declara el nodo por defecto con valor empy y apuntando a null
+        private Nodo _nodoInicial; //se declara el nodo por defecto con valor empty y apuntando a null
 
         public Lista() 
         {
@@ -31,7 +31,7 @@ namespace ListasSimplementeLigadas
            
             return (_nodoInicial.Siguiente == null); 
         }
-        public Nodo? Buscar(string dato) //metodo para bus 
+        public Nodo? Buscar(string dato) //metodo para buscar datos cuando se necesite eliminar
         {
             if (!EstaVacio())
             {
@@ -50,7 +50,7 @@ namespace ListasSimplementeLigadas
             return null;
         }
 
-        private Nodo? BuscarAnterior(string dato)
+        private Nodo? BuscarAnterior(string dato) //busca el nodo predecesor al nodo que contiene un valor especifico
         {
             if (!EstaVacio())
             {
@@ -69,7 +69,7 @@ namespace ListasSimplementeLigadas
             return null;
         }
 
-        public void Eliminar(string dato)
+        public void Eliminar(string dato) //metodo para eliminar
         {
             if (!EstaVacio())
             {
@@ -88,7 +88,7 @@ namespace ListasSimplementeLigadas
             }
         }
 
-        public string ObtenerValores() 
+        public string ObtenerValores() //recorre la lista y devuelve todos los valores almacenados en la lista como un string
         {
             StringBuilder datos = new StringBuilder();
             Nodo nodoActual = _nodoInicial;
